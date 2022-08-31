@@ -17,6 +17,7 @@ export default function Cards(){
     let [paisePorPag, setpaisePorPag] = useState(9)
 
     const pagina = (numeroPag) =>{
+        document.documentElement.scrollTop = 0;
         setpaginaActual(numeroPag)
         paginaActual !== 1 && setpaisePorPag(10)
     }
@@ -65,9 +66,11 @@ export default function Cards(){
         <div className={s.fatherDiv}>
             
         <nav className={s.nav}>
-            <NavLink to={"/"}>
+
+        <NavLink to={"/"}>
          <img className={s.imgGlobo} src={globo}/>
          </NavLink>
+
         <select name="a-z" className={s.select} onChange={(e )=> onChangueName(e)}>
             <option value="Pordef" hidden selected>Nombre</option>
            <option value="a-z" className={s.option}>A-Z</option>
@@ -96,6 +99,7 @@ export default function Cards(){
                 <option value={a.name} key={a.id} className={s.option}>{a.name}</option>
             ): null}
         </select>
+
         <SearchBar/>
 
         <a href="/countries/activities/new" className={s.activities}>Crear Actividades</a>
@@ -112,6 +116,7 @@ export default function Cards(){
             <h2>No se ha podido encontrar paises</h2>
         }
        </div>
+
        <div className={s.list}>
             <a href="/listactivities" className={s.a4}>Lista de actividades</a>
        </div>
