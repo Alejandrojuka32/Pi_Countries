@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { countriesActivities, getAllCountries } from "../Actions";
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 import s from "../ComponentsStyles/ActivitiesWithCountries.module.css"
 
 export default function ActivitiesWithCountries(){
@@ -32,11 +32,14 @@ export default function ActivitiesWithCountries(){
                             <div className={s.flagsContainer}>
                                 {
                                     a.countries && a.countries.map( c =>
-                                        <Link to={`/countries/${c.ccn3}`}>
+                                        <NavLink to={`/countries/${c.ccn3}`} className={s.link}>
                                         <div className={s.flag}>
                                             <img src={c.flags} className={s.flags}/>
+                                            <div className={s.submenu}>
+                                                {c.name}
+                                            </div>
                                         </div>
-                                        </Link>
+                                        </NavLink>
                                     )
                                 }
                             </div>

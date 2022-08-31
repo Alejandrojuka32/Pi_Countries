@@ -9,7 +9,9 @@ import { Link } from "react-router-dom";
 
 export default function CreateActivity(){
     const dispatch = useDispatch()
+    
     const history = useHistory()
+
     useEffect(()=>{
         dispatch(getAllCountries())
         dispatch(countriesActivities())

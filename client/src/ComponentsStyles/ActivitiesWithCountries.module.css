@@ -85,3 +85,19 @@
     color: aliceblue;
     background-color: rgb(13, 34, 80);
 }
+.submenu{
+    border-radius: 20px;
+    background-color: #04172c ;
+    float: left;
+    padding: 1%;
+    position: absolute;
+    display: none;
+}
+.flag:hover .submenu{
+    display: block;
+}
+.link{
+    text-decoration: none;
+    color: aliceblue;
+}
+
