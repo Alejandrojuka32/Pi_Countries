@@ -1,0 +1,80 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(17, 44, 102);
+    overflow: hidden;
+}
+.cardDetail{
+    margin-left: 5%;
+    color: aliceblue;
+    border-radius: 40px;
+    border: none;
+    width: 20%;
+    background-color: #04172c;
+}
+.bandera{
+    margin-top: 20px;
+    border-radius: 50px;
+    width: 90%;
+    border: 2px solid #88e200;
+}
+.information{
+    border: 2px solid #88e200;
+    text-align: justify;
+    color: aliceblue;
+    border-radius: 30px;
+    padding: 3%;
+    margin-top: 10%;
+    width: 120%;
+    background-color: #04172c;
+}
+.activities{
+    margin: 2%;
+    width: 26%;
+    border-radius: 30px;
+    background-color: rgb(17, 44, 102);
+    color: aliceblue;
+    text-align: justify;
+    padding: 1.3%;
+}
+.miniContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+.activitiesCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 120%;
+    margin-bottom: 10%;
+    border-radius: 30px;
+    padding: 3%;
+    background-color: #04172c;
+}
+.capital{
+    font-size: 28px;
+}
+.tittle{
+    margin-top: 80px;
+    margin-bottom: 31px;
+    background-color: #04172c;
+    border-radius: 30px;
+    color: rgb(211, 211, 38);
+}
+.name{
+    color:rgb(211, 211, 38) ;
+}
+.a{
+    font-size: 20px;
+    text-decoration: none;
+    position: fixed;
+    margin-top: 10px;
+    margin-left: -650px;
+    background-color: #88e200;
+    color: aliceblue;
+    padding: 4px;
+    border-radius: 15px;
+    width: 70px;
+}

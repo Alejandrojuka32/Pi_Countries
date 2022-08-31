@@ -1,0 +1,98 @@
+.activities{
+    text-decoration: none;
+    color: black;
+    background-color: #88e200;
+    border-radius: 20px;
+    margin: 2px;
+    padding: 7px;
+    cursor: pointer;
+}
+.nav{
+    background-color: #04172c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+.select{
+    width: 90px;
+    background-color: #00000000;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+.select2{
+    width: 110px;
+    background-color: #00000000;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+.select3{
+    width: 110px;
+    background-color: #00000000;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+.option{
+    background-color: #1e2747;
+    border: 5px solid #1e2747;
+    border-radius: 4px;
+}
+.activities:hover{
+    background-color: #94bb5a;
+}
+.imgGlobo{
+    width: 90px;
+    height: 90px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(17, 44, 102);
+}
+.cards{
+    margin: 20px;
+}
+.link{
+    text-decoration: none;
+    color: #04172c;
+}
+.fatherDiv{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(17, 44, 102);
+    overflow: hidden;
+}
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #88e200;
+    width: 20%;
+    height: 40px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    align-self: center;
+    cursor: pointer;
+}
+.a4{
+    text-decoration: none;
+    color: aliceblue;
+}
+.list:hover{
+    background-color: #c1d6a2;
+}

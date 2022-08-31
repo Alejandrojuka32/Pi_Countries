@@ -1,0 +1,178 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(17, 44, 102) ;
+    overflow: hidden;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 40px;
+    background-color: #04172c;
+    width: 35%;
+    height: 85%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.nombre{
+    margin-top: 30px;
+    background-color: rgb(17, 44, 102) ;
+    width: 85%;
+    padding: 10px;
+    border-radius: 60px;
+    color: aliceblue;
+}
+.duracion{
+    background-color: rgb(17, 44, 102);
+    width: 85%;
+    padding: 10px;
+    border-radius: 60px;
+    color: aliceblue;
+}
+.dificultad{
+    background-color: rgb(17, 44, 102);
+    width: 85%;
+    padding: 10px;
+    border-radius: 60px;
+    color: aliceblue;
+}
+.temporada{
+    background-color: rgb(17, 44, 102);
+    width: 85%;
+    padding: 10px;
+    border-radius: 60px;
+    color: aliceblue;
+}
+.paises{
+    background-color: rgb(17, 44, 102);
+    width: 85%;
+    padding: 10px;
+    border-radius: 60px;
+    color: aliceblue;
+}
+.input{
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    font-size: 15px;
+    border-radius: 60px;
+    width: 65%;
+    background-color: rgb(9, 8, 24) ;
+    color: aliceblue;
+}
+.select{
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    font-size: 15px;
+    border-radius: 60px;
+    width: 70%;
+    background-color: rgb(9, 8, 24) ;
+    color: aliceblue;
+}
+.boton{
+    margin-top: 30px;
+    background-color: #128502 ;
+    border: none;
+    border-radius: 22px;
+    font-size: 20px;
+    padding: 5px;
+    width: 65%;
+    margin-bottom: 60px;
+    color: aliceblue;
+}
+.boton:hover{
+    cursor: pointer;
+    background-color: rgb(9, 8, 24);
+}
+.paisesDiv{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border-radius: 30px;
+    background-color: #04172c;
+    width: 85%;
+    height: 40%;
+    padding: 2%;
+    margin-bottom: 40px;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+.containerPaises{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
+    border-radius: 40px;
+    background-color: rgb(17, 44, 102);
+    width: 40%;
+    height: 85%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.tittleDiv{
+    color: aliceblue;
+    width: 85%;
+    background-color: #04172c;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+.activityName{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    background-color: #04172c;
+    width: 60%;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 26px;
+}
+.flags{
+    margin-left: 15px;
+    width: 40px;
+    height: 30px;
+}
+.seleccionadoDiv{
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    border-radius: 30px;
+    background-color: rgb(17, 44, 102) ;
+    color: aliceblue;
+    width: 45%;
+}
+.botonDelete{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(253, 71, 71);
+}
+.home{
+    background-color: #88e200;
+    border-radius: 10px;
+    border: none;
+    color: aliceblue;
+    text-decoration: none;
+    position: fixed;
+    margin-top: -700px;
+    margin-right: -1200px;
+    padding: 10px;
+    width: 70px;
+}
+.nameError{
+    border-radius: 30px;
+    width: 60%;
+    background-color: aliceblue;
+    border: 1px solid red;
+}

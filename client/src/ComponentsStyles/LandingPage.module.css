@@ -1,0 +1,137 @@
+.boton{
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    background-color: #128502;
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    width: 270px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+.boton:hover{
+   background-color:  rgb(9, 8, 24);
+}
+.container{
+    display: flex;
+    height: 100vh;
+    background-color: rgb(17, 44, 102);
+    overflow: hidden;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.inicio{
+    display: flex;
+    flex-direction: column;
+    background-color: #04172c;
+    width: 35%;
+    height: 600px;
+    border-radius: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+
+}
+.tittle{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(206, 186, 5);
+    font-size: 35px;
+    height: 30px;
+    margin-top: 5px;
+}
+.tittleDiv{
+    border-radius: 40px;
+    text-align: center;
+    width: 85%;
+    margin-top: -20px;
+    background-color: rgb(9, 8, 24);
+}
+.imageGlobo{
+    height: 200px;
+    width:  200px;
+}
+.texto{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    width: 85%;
+    background-color: rgb(9, 8, 24) ;
+    font-size: 20px;
+}
+.p{
+    font-size: 23px;
+    color: aliceblue;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.ski{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #04172c;
+    width: 35%;
+    height: 600px;
+    border-radius: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.activitiesDiv{
+    border-radius: 40px;
+    text-align: center;
+    width: 85%;
+    background-color: rgb(9, 8, 24);
+    margin-left: 8%;
+}
+.activities{
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(206, 186, 5);
+    font-size: 35px;
+    margin-top: 5px;
+}
+.activitiesTextDiv{
+    margin-left: 8%;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    width: 85%;
+    background-color: rgb(9, 8, 24) ;
+    font-size: 20px;
+}
+.activitiesText{
+    text-align: start;
+    font-size: 23px;
+    color: aliceblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.botonActivities{
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    background-color: #128502;
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    width: 270px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+.botonActivities:hover{
+    background-color: rgb(9, 8, 24);
+}
+.imgSki{
+    margin-top: -30px;
+    height: 200px;
+    width:  280px;
+}

@@ -1,0 +1,33 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 280px;
+    min-height: 280px;
+    max-height: 280px;
+    border-radius: 30px;
+    background-color: #04172c;
+}
+.imgCard{
+    border-radius: 35px;
+    width: 100%;
+    height: 100%;
+}
+.nameCard{ 
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.divimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 90%;
+    height: 50%;
+}
+.text{
+    color: aliceblue;
+    font-size: 13px;
+}

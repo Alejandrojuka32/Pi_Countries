@@ -1,0 +1,87 @@
+.container{
+    background-color: rgb(17, 44, 102);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.flags{
+    width: 60px;
+    height: 45px;
+}
+.cards{
+    border: 2px solid #88e200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 2%;
+    border-radius: 40px;
+    background-color: #04172c;
+    width: 40%;
+}
+.flagsContainer{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flag{
+    margin-left: 10px;
+    margin-bottom: 10px ;
+}
+.miniContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+}
+.tittleDiv{
+    width: 70%;
+    background-color: #04172c;
+    border-radius: 40px;
+    color: rgb(211, 211, 38);
+}
+.boton{
+    border: none;
+    background-color: #128502;
+    border-radius: 30px;
+    width: 70%;
+    height: 40px;
+    margin-bottom: 5px;
+}
+.name{
+    background-color: rgb(17, 44, 102);
+    border-radius: 30px;
+    width: 70%;
+    color: rgb(211, 211, 38);
+}
+.adiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #88e200;
+    width: 10%;
+    height: 40px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.adiv:hover{
+    background-color: #c1d6a2;
+}
+.disponible{
+    height: 70%;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: aliceblue;
+    background-color: rgb(13, 34, 80);
+}
