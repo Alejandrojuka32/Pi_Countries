@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
-import { getAllCountries, filterByPopulation, filterByContinent,orderByName, filterByActivity} from "../Actions";
+import { getAllCountries, filterByPopulation, filterByContinent,orderByName, filterByActivity,searchBar} from "../Actions";
 import { allActivities } from "../Actions";
 import Card from "./Card";
 import {  NavLink } from "react-router-dom";
@@ -35,6 +35,17 @@ export default function Cards(){
         dispatch(allActivities())
     },[dispatch])
 
+    const [name, setname] = useState("")
+
+    function onChangeBar(e){
+        e.preventDefault()
+        setname(e.target.value)
+    }
+    function onClickBar(e){
+        e.preventDefault()
+        setpaginaActual(1)
+        dispatch(searchBar(name))
+    }
     const onChanguePop = (e)=>{
         e.preventDefault()
         dispatch(filterByPopulation(e.target.value))
@@ -100,7 +111,7 @@ export default function Cards(){
             ): null}
         </select>
 
-        <SearchBar/>
+        <SearchBar onChangeBar={onChangeBar} onClickBar={onClickBar}/>
 
         <a href="/countries/activities/new" className={s.activities}>Crear Actividades</a>
 
@@ -113,7 +124,10 @@ export default function Cards(){
                 </NavLink>
                 </div>
             ):
-            <h2>No se ha podido encontrar paises</h2>
+            <div className={s.loaderContainer}>
+                <div className={s.loader}></div>
+                <div className={s.loader2}></div>
+            </div>
         }
        </div>
 

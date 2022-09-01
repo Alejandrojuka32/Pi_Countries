@@ -89,7 +89,7 @@ export default function rootReducer(state = initialState, action){
                 activities: action.payload
             }
         case FILTER_ACTIVITY:
-            const allCities = state.copia
+            const allCities = state.countries
             let coun = []
             const newArray = allCities.map(c =>{
                 for(let i = 0; i < c.activities.length; i++){
