@@ -26,15 +26,16 @@ export default function Cards(){
     let PrimerPaisPag = ultPaisPag - paisePorPag
    
     const allCountries = useSelector((state)=> state.countries)
-    const Activities = useSelector((state)=> state.activities)
-
+    
     const dispatch = useDispatch()
-
+    
     useEffect(()=>{
         dispatch(getAllCountries())
         dispatch(allActivities())
     },[dispatch])
 
+    const Activities = useSelector((state)=> state.activities)
+    
     const [name, setname] = useState("")
 
     function onChangeBar(e){
@@ -105,10 +106,14 @@ export default function Cards(){
         </select>
 
         <select name="byActivity" className={s.select3} onChange={e => onChangeAct(e)} >
+
             <option value="nada" className={s.option}>Actividades</option>
-            {Activities? Activities.map(a =>
+
+            {
+            Activities? Activities.map(a =>
                 <option value={a.name} key={a.id} className={s.option}>{a.name}</option>
-            ): null}
+            )
+            : null}
         </select>
 
         <SearchBar onChangeBar={onChangeBar} onClickBar={onClickBar}/>
@@ -116,11 +121,12 @@ export default function Cards(){
         <a href="/countries/activities/new" className={s.activities}>Crear Actividades</a>
 
         </nav>
+
         <div className={s.container}>
             {paisesArenderizar.length > 0 ? paisesArenderizar.map(
                 c => <div key={c.ccn3} className={s.cards}>
                 <NavLink to = {`/countries/${c.ccn3}`} className={s.link}>
-                 <Card imagen={c.flags} nombre={c.name} continente={c.continente} />
+                 <Card imagen={c.flags} nombre={c.name} continente={c.continente}/>
                 </NavLink>
                 </div>
             ):

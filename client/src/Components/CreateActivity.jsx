@@ -153,13 +153,17 @@ export default function CreateActivity(){
                     <h3>Actividad disponible en:</h3>
                 </div>
                 <div className={s.paisesDiv}>
-                    {input.paises? input.paises.map(p =>
+                    {
+                    input.paises? input.paises.map(p =>
                     <div key={p.ccn3} className={s.seleccionadoDiv}>
+
                         <p><button value={p} onClick={(e) => onDelete(e)} className={s.botonDelete}>X</button> {p} <img src={
                             countries.filter(f => f.name === p)[0].flags
                         } className={s.flags}/></p>
+                        
                     </div>
-                ): null }
+                )
+                : null }
                 </div>
             </div>
         </div>
