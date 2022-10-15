@@ -10,10 +10,11 @@ export const CREATE_ACTIVITY = "CREATE_ACTIVITY"
 export const GET_ALL_ACTIVITIES = "GET_ALL_ACTIVITIES"
 export const FILTER_ACTIVITY = "FILTER_ACTIVITY"
 export const ACTIVITIES_COUNTRIES = "ACTIVITIES_COUNTRIES"
+export const URL = "https://countriesback.up.railway.app/"
 
 export const getAllCountries = () => {
     return function(dispatch){
-        return axios.get("https://countriesback-production.up.railway.app/countries")
+        return axios.get(URL + "countries")
         .then(info => info.data)
         .then(data => dispatch({type:GET_ALL_COUNTRIES,payload: data}) )
     }
@@ -42,7 +43,7 @@ export const orderByName = (payload) =>{
 
 export const countryDetail = (payload) =>{
     return function(dispatch){
-        return axios.get(`https://countriesback-production.up.railway.app/countries/${payload}`)
+        return axios.get(`${URL}countries/${payload}`)
         .then(d => d.data)
         .then(data => dispatch({type:COUNTRY_DETAIL,payload: data}))
     }
@@ -50,7 +51,7 @@ export const countryDetail = (payload) =>{
 
 export const searchBar = (name) =>{
     return function(dispatch){
-        return axios.get(`https://countriesback-production.up.railway.app/countries/?name=${name}`)
+        return axios.get(`${URL}countries/?name=${name}`)
         .then(p => p.data)
         .then(data => dispatch({type:SEARCH_BAR, payload:data}))
     }
@@ -58,14 +59,14 @@ export const searchBar = (name) =>{
 
 export const CreateActivities = (payload) =>{
     return function(dispatch){
-        return  axios.post(`https://countriesback-production.up.railway.app/activities`,payload)
+        return  axios.post(`${URL}activities`,payload)
         .then(e => dispatch({type:CREATE_ACTIVITY, payload: payload}))
     }
 }
 
 export const allActivities = () =>{
     return function(dispatch){
-        return axios.get("https://countriesback-production.up.railway.app/getActivities")
+        return axios.get(URL + "getActivities")
         .then(info => info.data)
         .then(data => dispatch({type:GET_ALL_ACTIVITIES, payload:data}))
     }
@@ -80,7 +81,7 @@ export const filterByActivity = (payload)=>{
 
 export const countriesActivities = () =>{
     return function(dispatch){
-        return axios.get("https://countriesback-production.up.railway.app/getCountriesAct")
+        return axios.get(URL+ "getCountriesAct")
         .then(info => info.data)
         .then(data => dispatch({type:ACTIVITIES_COUNTRIES, payload: data}))
     }
